@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Hacks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🦖</div>
+      <div>
+        <h1>DINO<span>HACKS</span></h1>
+        <p class="tagline">BEND THE RULES.</p>
+      </div>
+    </div>
+    <span class="version">BETA 1.0</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">YOUR GAME. YOUR RULES.</span>
+        <h2>Break the<br>high score.</h2>
+        <p>Ten cheats. One dinosaur. Zero mercy.</p>
+      </div>
+      <div class="hero-dino">🦖</div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">ⓘ</span>
+      <p>Choose a cheat, copy its code, then paste it into the Dino game's DevTools Console. These snippets are experimental and may need updates as Chrome changes.</p>
+    </section>
+
+    <div class="section-heading">
+      <h3>CHEAT LIBRARY</h3>
+      <span id="cheatCount">10 CHEATS</span>
+    </div>
+
+    <div class="search-wrap">
+      <span>⌕</span>
+      <input id="searchInput" type="text" placeholder="Find a cheat..." autocomplete="off">
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">ALL</button>
+      <button class="filter" data-filter="survival">SURVIVAL</button>
+      <button class="filter" data-filter="physics">PHYSICS</button>
+      <button class="filter" data-filter="automation">AUTO</button>
+      <button class="filter" data-filter="chaos">CHAOS</button>
+    </div>
+
+    <section id="cheatList" class="cheat-list"></section>
+
+    <section class="howto">
+      <h3>HOW TO USE</h3>
+      <ol>
+        <li>Open <strong>chrome://dino</strong> in a Chrome tab.</li>
+        <li>Start the game, then press <kbd>F12</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd>.</li>
+        <li>Open the Console, paste your copied snippet, and press Enter.</li>
+      </ol>
+      <p class="warning">Only paste code you understand and trust. Never disable browser security to run an unknown snippet.</p>
+    </section>
+
+    <footer>
+      <span>MADE FOR DINO CHAOS</span>
+      <button id="copyGuide">COPY USAGE GUIDE</button>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

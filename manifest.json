@@ -1,0 +1,15 @@
+
+{
+  "manifest_version": 3,
+  "name": "Tabby — Your Browser Cat",
+  "version": "2.0.0",
+  "description": "A chaotic cat that reacts to your browser habits, tracks your records, and unlocks achievements.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Tabby",
+    "default_popup": "popup.html"
+  }
+}
